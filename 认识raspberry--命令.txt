@@ -1,0 +1,10 @@
+sudo apt-get update
+sudo apt-get upgrade
+cat /etc/apt/sources.list
+sudo raspi-config
+sudo apt-get install wiringpi
+sudo i2cdetect -y 1
+
+sudo nano main.c
+gcc main.c -o main.c -lwiringPi
+./main.c
